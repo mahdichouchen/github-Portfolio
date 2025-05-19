@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='accueil.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            OZORA <br>
+            FESTIVAL 
+        </div>
+
+        <div class="middle-section" id="countdown">
+            
+            Only <span id="days"></span> days
+        </div>
+    </div>
+
+
+
+
+
+    <div class="right-section" id="subtitles">
+        <a href="about us.html" >ABOUT US</a>
+        <a href="gathering.html" >ABOUT OUR GATHERING</a>
+        <a href="ticket.html" >TICKETS</a>
+        
+    </div>
+    
+    <div class="event-details">
+      <P>MYSTICAL HARMONY FESTIVAL</P>
+        <h1>25 MAY - 28 MAY 2024</h1>
+        <p>TUNISIA , TOZEUR</p>
+    </div>
+
+    
+
+    <script>
+          var festivalDate = new Date('2024-05-25T00:00:00');
+        var currentDate = new Date();
+        var daysRemaining = Math.floor((festivalDate - currentDate) / (1000 * 60 * 60 * 24));
+        document.getElementById('days').innerText = daysRemaining;
+
+
+       
+     
+        
+    </script>
+  
+        <video  autoplay loop muted plays-inline class="back-video">
+          <source src="Gen-2 184347695, Explore the Sahara's, M 5.mp4" >
+        </video>
+  
+   
+    
+</body>
+</html>
